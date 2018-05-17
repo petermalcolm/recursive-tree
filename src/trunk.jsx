@@ -4,7 +4,8 @@ class Trunk extends React.Component {
   render() {
   	const translate = 'translate('+this.props.translateX+' '+this.props.translateY+')';
   	const rotate = 'rotate('+this.props.rotateDegree+' '+this.props.rotateFromX+' '+this.props.rotateFromY+')';
-  	const transform = translate + ' ' + rotate;
+  	const scale = 'scale('+this.props.scaleX+' '+this.props.scaleY+')';
+  	const transform = translate + ' ' + rotate + ' ' + scale;
     return (
       <g id="layer1">
 	    <path

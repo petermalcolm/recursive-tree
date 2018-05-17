@@ -3,10 +3,7 @@ import Trunk from './trunk';
 
 class SvgWrapper extends React.Component {
   render() {
-  	const translate = 'translate('+this.props.translateX+' '+this.props.translateY+')';
-  	const rotate = 'rotate('+this.props.rotateDegree+' '+this.props.rotateFromX+' '+this.props.rotateFromY+')';
-  	const transform = translate + ' ' + rotate;
-    return (
+   return (
 		<svg
 		width="100%"
 		height="600px"
@@ -18,16 +15,22 @@ class SvgWrapper extends React.Component {
 			</style>
 
 			  <Trunk 
-				barkColor={ this.props.barkColor }
 				translateX={ this.props.translateX } 
 				translateY={ this.props.translateY }
 				rotateDegree={ this.props.rotateDegree }
 				rotateFromX={ this.props.rotateFromX }
-				rotateFromY={ this.props.rotateFromY } />
+				rotateFromY={ this.props.rotateFromY }
+				scaleX = { this.props.scaleX }
+				scaleY = { this.props.scaleY } />
 
 		</svg>
     );
   }
+
+  recursivelyBranch() {
+
+  }
+
 }
 
 export default SvgWrapper;
