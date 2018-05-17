@@ -13,7 +13,7 @@ ReactDOM.render(
   rotateDegree="0"
   rotateFromX="90"
   rotateFromY="257"
-  scaleX = "1"
-  scaleY = "1" />,
+  scaleX = "2"
+  scaleY = "2" />,
   document.getElementById('root')
 );
