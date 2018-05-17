@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Trunk from './trunk';
+import SvgWrapper from './svg-wrapper';
 
 
 
 ReactDOM.render(
-  <Trunk 
+  <SvgWrapper 
   barkColor="#784421" 
   translateX="0" 
   translateY="0"
